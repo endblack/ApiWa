@@ -26,6 +26,7 @@ wget https://raw.githubusercontent.com/endblack/ApiWa/main/onapi > /dev/null 2>&
 chmod +x onapi offapi
 mv onapi offapi /bin
 unzip apiWa.zip
+rm apiWa.zip
 echo 
 echo "Instalação da api terminada"
 echo "Adicione a porta no arquivo /root/apiWa/dados.js"
