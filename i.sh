@@ -25,5 +25,6 @@ chmod +x onapi offapi
 mv onapi offapi /bin
 unzip apiWa.zip
 echo 
-echo "Instalação da api terminada. Use o comando onapi para ativar"
-echo 
+echo "Instalação da api terminada"
+echo "Adicione a porta no arquivo /root/apiWa/dados.js"
+echo "Depois use o comando onapi para ativar"
