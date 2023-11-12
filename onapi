@@ -1,0 +1,19 @@
+#!/bin/bash
+
+[[ -e /root/apiWa/prime ]] && {
+screen -r -S wapi -X quit
+cd /root/apiWa
+screen -dmS "wapi" sh start.sh
+echo
+echo "Api Online (WAPI)"
+echo
+exit 0
+}
+screen -r -S wapi -X quit
+cd /root/apiWa
+touch prime
+echo "onapi" >> /etc/autostart
+screen -dmS "wapi" sh start.sh
+echo
+echo "Api Online (prime)"
+echo
