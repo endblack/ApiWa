@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[ "$(whoami)" != "root" ]] && {
+[[ "$(whoami)" != "root" ]] && {
     echo
     echo "Instale com usuario root!"
     echo
