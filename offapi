@@ -1,6 +1,0 @@
-#!/bin/bash
-
-screen -r -S wapi -X quit
-echo
-echo "Api off"
-echo
