@@ -1,8 +1,0 @@
-#!/bin/bash
-
-screen -r -S wapi -X quit
-cd /root/apiWa
-screen -dmS "wapi" sh start.sh
-echo
-echo "Api Online (WAPI)"
-echo
