@@ -1,0 +1,17 @@
+#!/bin/bash
+
+screen -r -S wapi -X quit
+cd /root/apiWa
+[[ -e /root/apiWa/prime ]] && {
+  screen -dmS "wapi" sh start.sh
+  echo
+  echo "Api Online (WAPI)"
+  echo
+  exit 0
+}
+touch prime
+echo "ps x | grep 'wapi' | grep -v 'grep' || cd /root/apiWa && sudo screen -dmS 'wapi' sh start.sh && cd /root" >> /etc/autostart
+screen -dmS "wapi" sh start.sh
+echo
+echo "Api Online (PRIME)"
+echo
