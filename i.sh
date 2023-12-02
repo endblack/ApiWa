@@ -8,13 +8,23 @@
 }
 [[ -e /root/apiWa/app.js ]] && {
   echo
-  echo "Nada para atualizar"
+  echo "Atualizando api...."
+  echo
+  wget https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > /dev/null 2>&1
+  wget https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > /dev/null 2>&1
+  wget https://raw.githubusercontent.com/endblack/ApiWa/main/apion > /dev/null 2>&1
+  chmod 777 apion apioff
+  mv apion apioff /bin
+  unzip apiWa.zip
+  rm apiWa.zip
+  echo
+  echo "Atualização terminada! use apion para reiniciar"
   echo
   exit 0
 }
 apt update -y
 echo
-echo "Instalado api e suas dependências, aguarde..."
+echo "Instalado a api e suas dependências, aguarde..."
 echo
 apt install nodejs -y > /dev/null 2>&1
 apt install unzip -y > /dev/null 2>&1
@@ -23,7 +33,7 @@ apt install wget -y > /dev/null 2>&1
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > /dev/null 2>&1
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > /dev/null 2>&1
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apion > /dev/null 2>&1
-chmod +x apion apioff
+chmod 777 apion apioff
 mv apion apioff /bin
 unzip apiWa.zip
 rm apiWa.zip
