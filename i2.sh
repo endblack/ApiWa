@@ -10,9 +10,9 @@
   echo
   echo "Atualizando api...."
   echo
-  curl https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > apiWa.zip > /dev/null 2>&1
-  curl https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > apioff > /dev/null 2>&1
-  curl https://raw.githubusercontent.com/endblack/ApiWa/main/apion > apion > /dev/null 2>&1
+  curl https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > apiWa.zip
+  curl https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > apioff
+  curl https://raw.githubusercontent.com/endblack/ApiWa/main/apion > apion
   chmod 777 apion apioff
   mv apion apioff /bin
   rm -r /root/apiWa
@@ -33,9 +33,9 @@ apt install nodejs -y > /dev/null 2>&1
 apt install unzip -y > /dev/null 2>&1
 apt install screen -y > /dev/null 2>&1
 apt install wget -y > /dev/null 2>&1
-curl https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > apiWa.zip > /dev/null 2>&1
-curl https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > apioff > /dev/null 2>&1
-curl https://raw.githubusercontent.com/endblack/ApiWa/main/apion > apion > /dev/null 2>&1
+curl https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > apiWa.zip
+curl https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > apioff
+curl https://raw.githubusercontent.com/endblack/ApiWa/main/apion > apion
 chmod 777 apion apioff
 mv apion apioff /bin
 unzip apiWa.zip
