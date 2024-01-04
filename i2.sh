@@ -30,6 +30,7 @@
   echo
   echo $(cat /root/apiWa/token.txt)
   echo
+  apion
   exit 0
   }
   echo "Token de acesso a sua api, guarde com SEGURANÇA:"
