@@ -26,6 +26,10 @@
   #echo "Não esqueça de editar a porta no arquivo /root/apiWa/dados.js"
   echo
   [[ -e /root/apiWa/token.txt ]] && {
+  echo "Token de acesso a sua api, guarde com SEGURANÇA:"
+  echo
+  echo $(cat /root/apiWa/token.txt)
+  echo
   exit 0
   }
   echo "Token de acesso a sua api, guarde com SEGURANÇA:"
