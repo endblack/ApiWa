@@ -12,7 +12,7 @@
   echo
   curl https://raw.githubusercontent.com/endblack/ApiWa/main/src/favicon.ico > favicon.ico
   curl https://raw.githubusercontent.com/endblack/ApiWa/main/src/user.sh > user.sh
-  curl https://raw.githubusercontent.com/endblack/ApiWa/main/src/app.js > app.sh
+  curl https://raw.githubusercontent.com/endblack/ApiWa/main/src/app.js > app.js
   curl https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > apioff
   curl https://raw.githubusercontent.com/endblack/ApiWa/main/apion > apion
   chmod 777 apion apioff
