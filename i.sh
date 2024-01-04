@@ -34,6 +34,7 @@
   echo $token
   echo $token > /root/apiWa/token.txt
   echo
+  apion
   exit 0
 }
 apt update -y
