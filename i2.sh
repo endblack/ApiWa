@@ -67,4 +67,5 @@ echo "Token de acesso a sua api, guarde com SEGURANÇA:"
 echo
 echo $token
 echo $token > /root/apiWa/token.txt
-echo 
+echo
+apion

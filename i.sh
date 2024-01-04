@@ -69,4 +69,4 @@ token=$(node -e "console.log(require('crypto').randomBytes(50).toString('base64'
 echo $token
 echo $token > /root/apiWa/token.txt
 echo 
-cd
+apion
