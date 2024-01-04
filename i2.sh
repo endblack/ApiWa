@@ -65,6 +65,7 @@ echo
 echo "Depois use o comando apion para ativar"
 echo "Token de acesso a sua api, guarde com SEGURANÇA:"
 echo
+token=$(node -e "console.log(require('crypto').randomBytes(50).toString('base64'));")
 echo $token
 echo $token > /root/apiWa/token.txt
 echo
