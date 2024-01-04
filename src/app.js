@@ -1,6 +1,6 @@
 const express = require("express")
 const morgan = require("morgan")
-const fs = require("fs-extra")
+const fs = require("fs")
 const {dados} = require("./dados")
 const { exec } = require('child_process')
 const app = express()
@@ -13,7 +13,7 @@ app.listen(port, () => {
 })
 
 if(fs.existsSync("./token.txt")) {
-  var rtoken =  fs.readFileSync("./token.txt").toString().replaceAll("\n", "").replaceAll("\r", "")
+  var rtoken =  fs.readFileSync("./token.txt").toString().replace(/\n/g, "").replace("/\r/g", "")
 } else {
   var rtoken = require('crypto').randomBytes(50).toString('base64')
   fs.writeFileSync("./token.txt", rtoken)
