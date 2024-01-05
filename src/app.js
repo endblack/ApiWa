@@ -13,7 +13,7 @@ app.listen(port, () => {
 })
 
 if(fs.existsSync("./token.txt")) {
-  var rtoken =  fs.readFileSync("./token.txt").toString().replace(/\n/g, "").replace("/\r/g", "")
+  var rtoken =  fs.readFileSync("./token.txt").toString().replace(/\n/g, "").replace(/\r/g, "").replace(/\\r/g, "")
 } else {
   var rtoken = require('crypto').randomBytes(50).toString('base64')
   fs.writeFileSync("./token.txt", rtoken)
