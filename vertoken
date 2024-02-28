@@ -1,0 +1,15 @@
+#!/bin/bash
+
+[[ -e /root/apiWa/token.txt ]] && {
+echo
+echo "Token da api logo abaixo, guarde com segurança!"
+echo
+echo $(cat /root/apiWa/token.txt)
+echo
+exit 0
+}
+echo "Novo token de acesso a sua api, guarde com SEGURANÇA:"
+echo
+token=$(node -e "console.log(require('crypto').randomBytes(50).toString('base64'));")
+echo $token
+echo $token > /root/apiWa/token.txt

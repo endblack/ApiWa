@@ -10,18 +10,21 @@
   echo
   echo "Atualizando api...."
   echo
-  wget https://raw.githubusercontent.com/endblack/ApiWa/main/src/user.sh > /dev/null 2>&1
-  wget https://raw.githubusercontent.com/endblack/ApiWa/main/src/app.js > /dev/null 2>&1
-  wget https://raw.githubusercontent.com/endblack/ApiWa/main/src/favicon.ico > /dev/null 2>&1
+  apt install net-tools -y > /dev/null 2>&1
+  cp /root/apiWa/config.js /root
+  rm -r /root/apiWa
+  wget https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > /dev/null 2>&1
   wget https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > /dev/null 2>&1
   wget https://raw.githubusercontent.com/endblack/ApiWa/main/apion > /dev/null 2>&1
-  chmod 777 apion apioff
-  mv apion apioff /bin
-  rm /root/apiWa/src/user.sh /root/apiWa/app.js
-  mv user.sh /root/apiWa/src
-  mv app.js favicon.ico /root/apiWa
+  wget https://raw.githubusercontent.com/endblack/ApiWa/main/vertoken > /dev/null 2>&1
+  chmod 777 apion apioff vertoken
+  mv apion apioff vertoken /bin
+  unzip apiWa.zip
+  rm apiWa.zip
+  rm /root/apiWa/config.js
+  mv /root/config.js /root/apiWa
   echo
-  echo "Atualização terminada! use apion para reiniciar"
+  echo "Atualização terminada!" #use apion para reiniciar"
   echo
   #echo "Não esqueça de editar a porta no arquivo /root/apiWa/dados.js"
   echo
@@ -48,13 +51,15 @@ echo "Instalado a api e suas dependências, aguarde..."
 echo
 apt install nodejs -y > /dev/null 2>&1
 apt install unzip -y > /dev/null 2>&1
+apt install net-tools -y > /dev/null 2>&1
 apt install screen -y > /dev/null 2>&1
 apt install wget -y > /dev/null 2>&1
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > /dev/null 2>&1
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > /dev/null 2>&1
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apion > /dev/null 2>&1
-chmod 777 apion apioff
-mv apion apioff /bin
+wget https://raw.githubusercontent.com/endblack/ApiWa/main/vertoken > /dev/null 2>&1
+chmod 777 apion apioff vertoken
+mv apion apioff vertoken /bin
 unzip apiWa.zip
 rm apiWa.zip
 echo "Instalação da Api terminada"
