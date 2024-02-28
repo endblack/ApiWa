@@ -10,7 +10,8 @@ cd /root/apiWa
   exit 0
 }
 touch prime
-echo "ps x | grep 'wapi' | grep -v 'grep' || cd /root/apiWa && sudo screen -dmS 'wapi' sh start.sh && cd /root" >> /etc/autostart
+#echo "ps x | grep 'wapi' | grep -v 'grep' || cd /root/apiWa && sudo screen -dmS 'wapi' sh start.sh && cd /root" >> /etc/autostart
+(crontab -l > /tmp/apiWaRes; echo "@reboot sleep 10 && apion" >> /tmp/apiWaRes; cat /tmp/apiWaRes) | crontab -
 screen -dmS "wapi" sh start.sh
 echo
 echo "Api Online (PRIME)"
