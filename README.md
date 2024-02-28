@@ -8,5 +8,5 @@ sudo apt install curl -y; bash <(curl https://raw.githubusercontent.com/endblack
 ```
 
 Atualizado em: 27/02/2024 <br></br>
-• Melhorias na segurança
+• Melhorias na segurança <br>
 • Suporte ao script Dragoncore
