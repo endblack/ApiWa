@@ -7,6 +7,7 @@ Caso fique travado em ```instalando api``` use esse outro instalador:
 sudo apt install curl -y; bash <(curl https://raw.githubusercontent.com/endblack/ApiWa/main/i2.sh)
 ```
 
-Atualizado em: 27/02/2024 <br></br>
+Atualizado em: 29/02/2024 <br></br>
 • Melhorias na segurança <br>
-• Suporte ao script Dragoncore
+• Suporte ao script Dragoncore <br>
+• Correção de bugs em alguns servidores
