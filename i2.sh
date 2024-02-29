@@ -11,7 +11,9 @@
   echo "Atualizando api...."
   echo
   apt install net-tools -y > /dev/null 2>&1
-  cp /root/apiWa/config.js /root
+  cp /root/apiWa/dados.js /root
+  cp /root/apiWa/prime /root
+  cp /root/apiWa/token.txt /root
   rm -r /root/apiWa
   curl https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > apiWa.zip
   curl https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > apioff
@@ -21,8 +23,10 @@
   mv apion apioff vertoken /bin
   unzip apiWa.zip
   rm apiWa.zip
-  rm /root/apiWa/config.js
-  mv /root/config.js /root/apiWa
+  rm /root/apiWa/dados.js
+  mv /root/dados.js /root/apiWa
+  mv /root/prime /root/apiWa
+  mv /root/token.txt /root/apiWa
   echo
   echo "Atualização terminada!" #use apion para reiniciar"
   echo
