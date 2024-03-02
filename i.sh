@@ -11,6 +11,8 @@
   echo "Atualizando api...."
   echo
   apt install net-tools -y > /dev/null 2>&1
+  apt install speedtest-cli -y
+  apt install tar -y
   cp /root/apiWa/dados.js /root
   cp /root/apiWa/prime /root
   cp /root/apiWa/token.txt /root
@@ -58,6 +60,8 @@ apt install unzip -y > /dev/null 2>&1
 apt install net-tools -y > /dev/null 2>&1
 apt install screen -y > /dev/null 2>&1
 apt install wget -y > /dev/null 2>&1
+apt install speedtest-cli -y
+apt install tar -y
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apiWa.zip > /dev/null 2>&1
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apioff > /dev/null 2>&1
 wget https://raw.githubusercontent.com/endblack/ApiWa/main/apion > /dev/null 2>&1
