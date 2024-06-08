@@ -11,3 +11,6 @@ Atualizado em: 02/03/2024 <br></br>
 • Melhorias na segurança <br>
 • Suporte ao script Dragoncore <br>
 • Correção de bugs em alguns servidores
+
+# teste
+https://www.mercadopago.com.br/developers/panel/app
